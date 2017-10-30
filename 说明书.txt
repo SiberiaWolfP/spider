@@ -1,0 +1,27 @@
+说明书：
+环境：
+automium==0.2.6
+automium-web==0.1.1
+beautifulsoup4==4.4.1
+bs4==0.0.1
+click==6.7
+Django==1.11.6
+Flask==0.12.2
+itsdangerous==0.24
+Jinja2==2.9.6
+legacy==0.1.6
+MarkupSafe==1.0
+MySQL-python==1.2.4b4
+PyMySQL==0.7.11
+pytz==2017.2
+views==0.3
+Werkzeug==0.12.2
+
+spider_baike-master文件夹中为爬虫
+需要将master文件夹作为项目打开才能正常使用，原因不明（
+该爬虫原定设计为爬取B站每个AV号的UP主的ID和签名，由于B站抓取下来的网页乱码且谷歌许久无法解决，于是放弃，加上时间不多，就重新写了一遍教程的爬虫充数（
+设定可以爬取50个相关页面，然后注入到web项目的sqlite3数据库，由于数据库路径写的是绝对路径，需要另外修改
+
+web文件夹下为django项目
+通过搭建开发服务器并输入url：http://127.0.0.1:8000/index 可以实现将爬取数据显示在网页
+

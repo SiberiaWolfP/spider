@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>爬取数据如下：</p>
+    {% for passage in passages %}
+          <a>{{ passage.id }}</a><br>
+          <a>{{ passage.url }}</a><br>
+          <a>{{ passage.name }}</a><br>
+          <a>{{ passage.text }}</a><br>
+          <br>
+          <br>
+    {% endfor %}
+</body>
+</html>
